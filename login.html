@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <header class="baseHead">
+        <div class="header-div">
+            <a aria-current="page" class="lo-design" title="Home-Pictalbum" href="./index.html">
+                <img src="./Images/logo.svg" alt="logo" class="svg-logo" width="70">
+            </a>
+
+            <div class="search-div">
+                <form class="search-container" method="get" role="search">
+
+                    <input type="text" class="search-input" name="searchBox" autocomplete="off" autocapitalize="off"
+                        autocorrect="off" placeholder="   search photos ...">
+                    <button id="search-button" class="search-button" class="search-button" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </form>
+            </div>
+            <a class="submit-image">Submit an image</a>
+
+            <a class="logIn" title="Login-button" href="./login.html">Login</a>
+
+        </div>
+
+    </header>
+    <!--  login container -->
+
+
+    <div data-testid="login-route" class="l-route">
+        <div class="sfn">
+            <div class="gmb"><!-- login member -->
+                <div class="wlog">
+                    <h1 class="l-h1">Login</h1>
+                    <P class="l-w">Welcome back</P>
+                    <div class="span-box">
+                        <span id="log-alert"></span>
+                    </div>
+
+                </div>
+
+            </div>
+            <form class="log-form" method="post" id="loginForm"> <!-- flex -->
+                <label class="uil">Email
+                    <div class="uinf" placeholder=""></div>
+                    <input type="email" name="email" class="w800b" id="email" required>
+                </label>
+                <label class="uil">
+                    <div class="pass">
+                        Password
+                        <a href="/" class="fmp">Forget your password?</a>
+                    </div>
+                    <div class="uinf" placeholder=""></div>
+                    <input type="password" name="password" class="w800b" id="password" autocomplete="off" required>
+
+                </label>
+
+                <button class="btn-login" type="submit" value="login">Login</button>
+
+
+            </form>
+            <div class="nasi">
+                <p>
+                    Don't have an account?<a href="">Join</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="./login.js"></script>
+
+</body>
+
+</html>

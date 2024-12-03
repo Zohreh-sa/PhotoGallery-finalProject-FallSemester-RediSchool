@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project -FE- Fall2024- ReDi School</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="baseHead">
+        <div class="header-div">
+            <a aria-current="page" class="lo-design" title="Home-Pictalbum" href="./index.html">
+                <img src="./Images/logo.svg" alt="logo" class="svg-logo" width="70">
+            </a>
+
+            <div class="search-div">
+                <form class="search-container" method="get" role="search">
+
+                    <input type="text" class="search-input" name="searchBox" autocomplete="off" autocapitalize="off"
+                        autocorrect="off" placeholder="   search photos ...">
+                    <button id="search-button" class="search-button" class="search-button" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </form>
+            </div>
+            <div class="subImage">
+                <a class="submit-image">Submit an image</a>
+            </div>
+            <a class="logIn" title="Login-button" href="./login.html">Login</a>
+            <button class="toggle">&#9776;</button>
+
+            <div class="toggle-items">
+                <a class="about-us" href="#">About us </a>
+                <a class="contact-us" href="#"> Contact us</a>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="catListContainer">
+            <nav id="tabs">
+                <div class="sbe"></div>
+                <div class="sbe"></div>
+                <a href="#" data-category="all" class="tab">All photos</a>
+                <a href="#" data-category="AI" class="tab">AI generated</a>
+                <a href="#" data-category="Animals" class="tab">Animals</a>
+                <a href="#" data-category="foodAndDrink" class="tab">Food & Drink</a>
+                <a href="#" data-category="Landscape" class="tab">Landscape</a>
+                <a href="#" data-category="Night" class="tab">Night</a>
+                <a href="#" data-category="People" class="tab">People</a>
+                <a href="#" data-category="wallpaper" class="tab">Wallpapers</a>
+                <div class="sbe"></div>
+                <div class="sbe"></div>
+            </nav>
+        </div>
+        <div class="photo-gallery" id="photo-gallery"></div>
+
+
+
+    </main>
+
+
+
+
+    <footer>
+        <div id="foflex">
+            <div class="fNote">&copy;Redi School- Fall semester- Frontend development</div>
+        </div>
+    </footer>
+
+    <!--Image loading layout  -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- Masonry Layout -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
