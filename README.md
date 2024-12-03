@@ -4,17 +4,24 @@ Future enhancements include the integration of a database, enabling user sign-up
 
 Click on link below to see the final look.
 
-https://zohreh-sa.github.io/PhotoGallery-finalProject-RediSchool/
 
 
-laptop view:
+https://zohreh-sa.github.io/PhotoGallery-finalProject-FallSemester-RediSchool/
+
+
+
+                    Laptop view:
+
 ![laptop view](https://github.com/user-attachments/assets/3ad115e2-5787-40c7-9db7-bdfeda3dd756)
 
 
-Login view
+                        
+                        Login view
+
 ![Login view](https://github.com/user-attachments/assets/aea67581-2dd8-4404-846e-1996b1971669)
 
 
 
-tablet view
+                        Tablet view
+
 ![tablet view](https://github.com/user-attachments/assets/cd521637-7c6f-47f7-89ed-747132ddb5ee)
