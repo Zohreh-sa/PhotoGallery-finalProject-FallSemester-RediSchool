@@ -20,8 +20,10 @@ function renderPhotos(categories) {
 
 
     // Loop through the selected categories and generate photos
-    photoDatabase.forEach(([filename, category]) => {
-        if (categories.includes('all') || categories.includes(category)) {
+    for (let i=0; i<photoDatabase.length; i++){
+        const [filename, category]=photoDatabase[i];
+        
+        if (categories.includes('all') || categories.includes(category)){
             // Create a photo container
             const photoDiv = document.createElement('div');
             photoDiv.className = 'photo';
@@ -36,7 +38,7 @@ function renderPhotos(categories) {
             photoDiv.appendChild(img);
             gallery.appendChild(photoDiv);
         }
-    });
+    };
 
 
     // Wait for images to load before initializing Masonry
