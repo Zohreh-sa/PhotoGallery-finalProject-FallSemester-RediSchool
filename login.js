@@ -51,3 +51,25 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     }
 });
 
+
+
+const toggleButton = document.querySelector('.toggle');
+const toggleItems = document.querySelector('.toggle-items');
+
+// Toggle menu visibility when the button is clicked
+toggleButton.addEventListener('click', (event) => {
+    toggleItems.classList.toggle('active');
+    event.stopPropagation(); // Stop click from propagating
+});
+
+// Close the menu when clicking outside
+document.addEventListener('click', () => {
+    if (toggleItems.classList.contains('active')) {
+        toggleItems.classList.remove('active');
+    }
+});
+
+// Prevent menu clicks from closing it
+toggleItems.addEventListener('click', (event) => {
+    event.stopPropagation();
+});
