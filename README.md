@@ -4,7 +4,7 @@ Future enhancements include the integration of a database, enabling user sign-up
 
 Click on link below to see the final look.
 
-https://zohreh-sa.github.io/PhotoGallery-finalProject-RediSchool/
+
 
 
 Laptop view:
